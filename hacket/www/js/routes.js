@@ -7,10 +7,10 @@ angular.module('app.routes', [])
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-    
-  
 
-      .state('hacket2.hacket', {
+
+
+  .state('hacket2.hacket', {
     url: '/homepage',
     views: {
       'side-menu21': {
@@ -29,6 +29,15 @@ angular.module('app.routes', [])
       }
     }
   })
+
+  /*.state('hacket2.bikeSession.stopCtrl', {
+    views: {
+      'side-menu':{
+        templateUrl: 'templates/bikeSession.html',
+        controller: 'bikeSessionCtrl'
+      }
+    }
+  })*/
 
   .state('hacket2.musicSession', {
     url: '/musicsession',
@@ -56,8 +65,38 @@ angular.module('app.routes', [])
     }
   })
 
+  .state('hacket2.february172017', {
+    url: '/feb17',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/february172017.html',
+        controller: 'february172017Ctrl'
+      }
+    }
+  })
+
+  .state('hacket2.february152017', {
+    url: '/feb15',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/february152017.html',
+        controller: 'february152017Ctrl'
+      }
+    }
+  })
+
+  .state('hacket2.february142017', {
+    url: '/feb14',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/february142017.html',
+        controller: 'february142017Ctrl'
+      }
+    }
+  })
+
 $urlRouterProvider.otherwise('/menu/homepage')
 
-  
+
 
 });

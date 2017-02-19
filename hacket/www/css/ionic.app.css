@@ -9799,5 +9799,14 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+ui-gmap-google-map {
+  height: 100%;
+  width: 100%;
+  display: block; }
+  ui-gmap-google-map .angular-google-map {
+    height: 100%; }
+    ui-gmap-google-map .angular-google-map .angular-google-map-container {
+      height: 100%; }
+
 ion-view, .pane, .view {
   background-color: #5E4770; }

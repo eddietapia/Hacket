@@ -1,13 +1,42 @@
 <ion-view title="Bike Session" id="page2">
   <ion-content padding="true" class="has-header">
-    <h1 id="bikeSession-heading3" style="color:#FFFFFF;font-weight:lighter;text-align:center;">Stay safe out there -Your friends at Hacket</h1>
+    <h1 id="bikeSession-heading3" style="color:#FFFFFF;font-weight:lighter;text-align:center;">Have a safe trip!</h1>
+    <h3 id="bikeSession-heading6" style="color:#FFFFFF;font-weight:lighter;text-align:center;">LED Configuration: </h3>
+    <div class="spacer" style="width: 300px; height: 31px;"></div>
     <div id="bikeSession-button-bar1" class="button-bar">
-      <button id="bikeSession-button6" class="button button-stable  button-block">Left</button>
-      <button id="bikeSession-button7" class="button button-assertive  button-block">Stop</button>
-      <button id="bikeSession-button8" class="button button-stable  button-block">Right</button>
+      <button id="left-button" ng-click="leftCtrl($event)"class="button button-stable  button-block">Left</button>
+      <md-button id="stop-button" ng-click="stopCtrl($event)" class="button button-assertive  button-block">Stop</md-button>
+      <md-button id="right-button" ng-click="rightCtrl($event)" class="button button-stable  button-block">Right</md-button>
     </div>
+    <div class="spacer" style="width: 300px; height: 38px;"></div>
+    <h3 id="bikeSession-heading9" style="color:#FFFFFF;font-weight:lighter;text-align:center;">Current Ride:</h3>
     <div>
       <img src="img/eEkgAt3TQFCp9J562XzE_speed.PNG" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
     </div>
+    <h3 id="bikeSession-heading7" style="color:#FFFFFF;font-weight:lighter;text-align:center;">Past Sessions</h3>
+    <ion-list id="bikeSession-list2">
+      <label class="item item-input" id="bikeSession-search2">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="">
+      </label>
+      <ion-item class="item-icon-right" id="bikeSession-list-item8" ui-sref="hacket2.february172017">Feb 17, 2017
+        <i class="icon ion-android-arrow-dropright-circle"></i>
+      </ion-item>
+      <ion-item class="item-icon-right" id="bikeSession-list-item9" ui-sref="hacket2.february152017">Feb 15, 2017
+        <i class="icon ion-android-arrow-dropright-circle"></i>
+      </ion-item>
+      <ion-item class="item-icon-right" id="bikeSession-list-item10" ui-sref="hacket2.february142017">Feb 14, 2017
+        <i class="icon ion-android-arrow-dropright-circle"></i>
+      </ion-item>
+      <ion-item class="item-icon-right" id="bikeSession-list-item11" ui-sref="hacket2.february142017">Feb 12, 2017
+        <i class="icon ion-android-arrow-dropright-circle"></i>
+      </ion-item>
+      <ion-item class="item-icon-right" id="bikeSession-list-item12" ui-sref="hacket2.february142017">Feb 11, 2017
+        <i class="icon ion-android-arrow-dropright-circle"></i>
+      </ion-item>
+      <ion-item class="item-icon-right" id="bikeSession-list-item13" ui-sref="hacket2.february142017">Feb 10, 2017
+        <i class="icon ion-android-arrow-dropright-circle"></i>
+      </ion-item>
+    </ion-list>
   </ion-content>
 </ion-view>
