@@ -12,8 +12,22 @@ function ($scope, $stateParams) {
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 
-  function ($scope, $stateParams) {
+  function ($scope, $http) {
     $scope.stopCtrl = function(ev) {
+      $data = 3
+      //res = $http.post('http://10.19.185.126:5000/left', $data).then(successCallback, errorCallback);
+      //post(url:'http://10.19.185.126:5000/left', body: 1, options?: RequestOptionsArgs): Observable<Response>;
+      $http({
+        url: 'http://10.19.185.126:5000/left',
+        method: "POST",
+        data: { 'id' : '3' }
+      })
+      .then(function(response) {
+        alert("sucess!");
+      },
+      function(response) { // optional
+        alert("failed!")
+      });
       // Alert the cars that we are slowing down
       alert("Slowing down");
     }
